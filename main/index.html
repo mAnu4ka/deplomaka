@@ -74,14 +74,14 @@
             </div>
         </div>
         <div class="tabs">
-            <p>Квадроциклы</p>
-            <p class="active">Катера</p>
-            <p>Гидроциклы</p>
-            <p>Лодки</p>
-            <p>Вездеходы</p>
-            <p>Снегоходы</p>
-            <p>Двигатели</p>
-            <p>Запчасти</p>
+            <p class="tablinks" onclick="openCity(event, 'Квадроциклы')">Квадроциклы</p>
+            <p class="tablinks" onclick="openCity(event, 'Катера')">Катера</p>
+            <p class="tablinks" onclick="openCity(event, 'Гидроциклы')">Гидроциклы</p>
+            <p class="tablinks" onclick="openCity(event, 'Лодки')">Лодки</p>
+            <p class="tablinks" onclick="openCity(event, 'Вездеходы')">Вездеходы</p>
+            <p class="tablinks" onclick="openCity(event, 'Снегоходы')">Снегоходы</p>
+            <p class="tablinks" onclick="openCity(event, 'Двигатели')">Двигатели</p>
+            <p class="tablinks" onclick="openCity(event, 'Запчасти')">Запчасти</p>
         </div>
     </header>
     <main class="max-width">
@@ -156,12 +156,12 @@
         </div>
         <div class="midddle">
             <div class="main_tabs">
-                <p class="active">Поиск по номеру</p>
-                <p>Поиск по марке</p>
-                <p>Поиск по названию товара</p>
+                <p class="asd" onclick="asd(event, 'номеру')">Поиск по номеру</p>
+                <p class="asd active" onclick="asd(event, 'марке')">Поиск по марке</p>
+                <p class="asd" onclick="asd(event, 'названию товара')">Поиск по названию товара</p>
             </div>
             <div class="inp">
-                <input type="text" placeholder="Введите марку ">
+                <input type="text" name="inp" placeholder="Введите марку">
                 <p class="search">искать</p>
             </div>
             <div class="greed">
@@ -176,18 +176,85 @@
                             </svg>
                         </p>
                     </div>
-                    <img src="../publuc/CFMOTO-X6-EPS_blue 1.png" alt="">
+                    <img src="../publuc/car.png">
+                </div>
+                <div class="item">
+                    <div>
+                        <p>Гидроциклы</p>
+                        <p class="grey">Подробее <svg width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.228824 7.88793C-0.0650263 8.13366 -0.0762935 8.54196 0.203658 8.79989C0.48361 9.05782 0.948767 9.06771 1.24262 8.82198C1.24262 8.82198 5.77719 4.97116 5.78955 4.95998C6.07934 4.69388 6.06851 4.27195 5.76535 4.01758L1.24266 0.178763C0.949277 -0.067399 0.484101 -0.0581923 0.203658 0.199327C-0.0767846 0.456846 -0.0662956 0.865161 0.227086 1.11132L3.71295 4.12125C3.94389 4.32066 3.94393 4.67861 3.71304 4.87807L0.228824 7.88793Z"
+                                    fill="#C4C4C4" />
+                            </svg>
+                        </p>
+                    </div>
+                    <img src="../publuc/vnedoroshnik.png">
+                </div>
+                <div class="item">
+                    <div>
+                        <p>Катера</p>
+                        <p class="grey">Подробее <svg width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.228824 7.88793C-0.0650263 8.13366 -0.0762935 8.54196 0.203658 8.79989C0.48361 9.05782 0.948767 9.06771 1.24262 8.82198C1.24262 8.82198 5.77719 4.97116 5.78955 4.95998C6.07934 4.69388 6.06851 4.27195 5.76535 4.01758L1.24266 0.178763C0.949277 -0.067399 0.484101 -0.0581923 0.203658 0.199327C-0.0767846 0.456846 -0.0662956 0.865161 0.227086 1.11132L3.71295 4.12125C3.94389 4.32066 3.94393 4.67861 3.71304 4.87807L0.228824 7.88793Z"
+                                    fill="#C4C4C4" />
+                            </svg>
+                        </p>
+                    </div>
+                    <img src="../publuc/boat.png">
+                </div>
+                <div class="item">
+                    <div>
+                        <p>Снегоходы</p>
+                        <p class="grey">Подробее <svg width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.228824 7.88793C-0.0650263 8.13366 -0.0762935 8.54196 0.203658 8.79989C0.48361 9.05782 0.948767 9.06771 1.24262 8.82198C1.24262 8.82198 5.77719 4.97116 5.78955 4.95998C6.07934 4.69388 6.06851 4.27195 5.76535 4.01758L1.24266 0.178763C0.949277 -0.067399 0.484101 -0.0581923 0.203658 0.199327C-0.0767846 0.456846 -0.0662956 0.865161 0.227086 1.11132L3.71295 4.12125C3.94389 4.32066 3.94393 4.67861 3.71304 4.87807L0.228824 7.88793Z"
+                                    fill="#C4C4C4" />
+                            </svg>
+                        </p>
+                    </div>
+                    <img src="../publuc/sneg.png">
+                </div>
+                <div class="item">
+                    <div>
+                        <p>Вездеходы</p>
+                        <p class="grey">Подробее <svg width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.228824 7.88793C-0.0650263 8.13366 -0.0762935 8.54196 0.203658 8.79989C0.48361 9.05782 0.948767 9.06771 1.24262 8.82198C1.24262 8.82198 5.77719 4.97116 5.78955 4.95998C6.07934 4.69388 6.06851 4.27195 5.76535 4.01758L1.24266 0.178763C0.949277 -0.067399 0.484101 -0.0581923 0.203658 0.199327C-0.0767846 0.456846 -0.0662956 0.865161 0.227086 1.11132L3.71295 4.12125C3.94389 4.32066 3.94393 4.67861 3.71304 4.87807L0.228824 7.88793Z"
+                                    fill="#C4C4C4" />
+                            </svg>
+                        </p>
+                    </div>
+                    <img src="../publuc/vnedoroshnik.png" >
+                </div>
+                <div class="item">
+                    <div>
+                        <p>Двигатели</p>
+                        <p class="grey">Подробее <svg width="6" height="9" viewBox="0 0 6 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.228824 7.88793C-0.0650263 8.13366 -0.0762935 8.54196 0.203658 8.79989C0.48361 9.05782 0.948767 9.06771 1.24262 8.82198C1.24262 8.82198 5.77719 4.97116 5.78955 4.95998C6.07934 4.69388 6.06851 4.27195 5.76535 4.01758L1.24266 0.178763C0.949277 -0.067399 0.484101 -0.0581923 0.203658 0.199327C-0.0767846 0.456846 -0.0662956 0.865161 0.227086 1.11132L3.71295 4.12125C3.94389 4.32066 3.94393 4.67861 3.71304 4.87807L0.228824 7.88793Z"
+                                    fill="#C4C4C4" />
+                            </svg>
+                        </p>
+                    </div>
+                    <img src="../publuc/mator.png">
                 </div>
             </div>
             <div class="midle_main">
                 <h2>Популярные товары</h2>
                 <div class="tabs">
-                    <p class="active">запчасти</p>
-                    <p>моторы</p>
-                    <p>шины</p>
-                    <p>электроника</p>
-                    <p>инструменты</p>
-                    <p>аксессуары</p>
+                    <p class="mostpopulare" onclick="mostpopulare(event, 'Квадроциклы')">Квадроциклы</p>
+                    <p class="mostpopulare" onclick="mostpopulare(event, 'Катера')">Катера</p>
+                    <p class="mostpopulare" onclick="mostpopulare(event, 'Гидроциклы')">Гидроциклы</p>
+                    <p class="mostpopulare" onclick="mostpopulare(event, 'Лодки')">Лодки</p>
+                    <p class="mostpopulare" onclick="mostpopulare(event, 'Вездеходы')">Вездеходы</p>
+                    <p class="mostpopulare" onclick="mostpopulare(event, 'Снегоходы')">Снегоходы</p>
+                    <p class="mostpopulare" onclick="mostpopulare(event, 'Двигатели')">Двигатели</p>
+                    <p class="mostpopulare" onclick="mostpopulare(event, 'Запчасти')">Запчасти</p>
                 </div>
                 <div class="slider">
                     <div class="swiper mySwipers">
@@ -195,10 +262,13 @@
                             <div class="swiper-slide">
                                 <div class="item">
                                     <div class="top_item">
-                                        <div class="sale none">
-                                            <p>SALE</p>
-                                        </div>
-                                        <p class="icon-like"></p>
+                                        <p class="icon-like"><svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                                                    fill="#2F3035" />
+                                            </svg>
+                                        </p>
                                     </div>
                                     <img src="../publuc/cq5dam.web.768 1.png" alt="">
                                     <div class="bottom_item">
@@ -214,215 +284,26 @@
                                                     d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
                                                     fill="white" />
                                             </svg>
-
                                         </p>
                                     </button>
+                                    <div class="hover">
+                                        <p>посмотреть товар</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide"><div class="item">
-                                <div class="top_item">
-                                    <div class="sale none">
-                                        <p>SALE</p>
-                                    </div>
-                                    <p class="icon-like"></p>
-                                </div>
-                                <img src="../publuc/cq5dam.web.768 1.png" alt="">
-                                <div class="bottom_item">
-                                    <p class="name_name">Водонепроницаемый
-                                        Рюкзак</p>
-                                    <p class="price_item">9 800 ₽</p>
-                                </div>
-                                <button>
-                                    <p class="icon-cart">
-                                        <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </p>
-                                </button>
-                            </div></div>
-                            <div class="swiper-slide"><div class="item">
-                                <div class="top_item">
-                                    <div class="sale none">
-                                        <p>SALE</p>
-                                    </div>
-                                    <p class="icon-like"></p>
-                                </div>
-                                <img src="../publuc/cq5dam.web.768 1.png" alt="">
-                                <div class="bottom_item">
-                                    <p class="name_name">Водонепроницаемый
-                                        Рюкзак</p>
-                                    <p class="price_item">9 800 ₽</p>
-                                </div>
-                                <button>
-                                    <p class="icon-cart">
-                                        <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </p>
-                                </button>
-                            </div></div>
-                            <div class="swiper-slide"><div class="item">
-                                <div class="top_item">
-                                    <div class="sale none">
-                                        <p>SALE</p>
-                                    </div>
-                                    <p class="icon-like"></p>
-                                </div>
-                                <img src="../publuc/cq5dam.web.768 1.png" alt="">
-                                <div class="bottom_item">
-                                    <p class="name_name">Водонепроницаемый
-                                        Рюкзак</p>
-                                    <p class="price_item">9 800 ₽</p>
-                                </div>
-                                <button>
-                                    <p class="icon-cart">
-                                        <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </p>
-                                </button>
-                            </div></div>
-                            <div class="swiper-slide"><div class="item">
-                                <div class="top_item">
-                                    <div class="sale none">
-                                        <p>SALE</p>
-                                    </div>
-                                    <p class="icon-like"></p>
-                                </div>
-                                <img src="../publuc/cq5dam.web.768 1.png" alt="">
-                                <div class="bottom_item">
-                                    <p class="name_name">Водонепроницаемый
-                                        Рюкзак</p>
-                                    <p class="price_item">9 800 ₽</p>
-                                </div>
-                                <button>
-                                    <p class="icon-cart">
-                                        <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </p>
-                                </button>
-                            </div></div>
-                            <div class="swiper-slide"><div class="item">
-                                <div class="top_item">
-                                    <div class="sale none">
-                                        <p>SALE</p>
-                                    </div>
-                                    <p class="icon-like"></p>
-                                </div>
-                                <img src="../publuc/cq5dam.web.768 1.png" alt="">
-                                <div class="bottom_item">
-                                    <p class="name_name">Водонепроницаемый
-                                        Рюкзак</p>
-                                    <p class="price_item">9 800 ₽</p>
-                                </div>
-                                <button>
-                                    <p class="icon-cart">
-                                        <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </p>
-                                </button>
-                            </div></div>
-                            <div class="swiper-slide"><div class="item">
-                                <div class="top_item">
-                                    <div class="sale none">
-                                        <p>SALE</p>
-                                    </div>
-                                    <p class="icon-like"></p>
-                                </div>
-                                <img src="../publuc/cq5dam.web.768 1.png" alt="">
-                                <div class="bottom_item">
-                                    <p class="name_name">Водонепроницаемый
-                                        Рюкзак</p>
-                                    <p class="price_item">9 800 ₽</p>
-                                </div>
-                                <button>
-                                    <p class="icon-cart">
-                                        <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </p>
-                                </button>
-                            </div></div>
-                            <div class="swiper-slide"><div class="item">
-                                <div class="top_item">
-                                    <div class="sale none">
-                                        <p>SALE</p>
-                                    </div>
-                                    <p class="icon-like"></p>
-                                </div>
-                                <img src="../publuc/cq5dam.web.768 1.png" alt="">
-                                <div class="bottom_item">
-                                    <p class="name_name">Водонепроницаемый
-                                        Рюкзак</p>
-                                    <p class="price_item">9 800 ₽</p>
-                                </div>
-                                <button>
-                                    <p class="icon-cart">
-                                        <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </p>
-                                </button>
-                            </div></div>
-                            <div class="swiper-slide"><div class="item">
-                                <div class="top_item">
-                                    <div class="sale none">
-                                        <p>SALE</p>
-                                    </div>
-                                    <p class="icon-like"></p>
-                                </div>
-                                <img src="../publuc/cq5dam.web.768 1.png" alt="">
-                                <div class="bottom_item">
-                                    <p class="name_name">Водонепроницаемый
-                                        Рюкзак</p>
-                                    <p class="price_item">9 800 ₽</p>
-                                </div>
-                                <button>
-                                    <p class="icon-cart">
-                                        <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </p>
-                                </button>
-                            </div></div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
+
                 </div>
             </div>
             <center>
@@ -439,12 +320,14 @@
             <div class="bottom">
                 <h1>С этим товаром покупают</h1>
                 <div class="tabs">
-                    <p class="active">запчасти</p>
-                    <p>моторы</p>
-                    <p>шины</p>
-                    <p>электроника</p>
-                    <p>инструменты</p>
-                    <p>аксессуары</p>
+                    <p class="openFavorite" onclick="openFavorite(event, 'Квадроциклы')">Квадроциклы</p>
+                    <p class="openFavorite" onclick="openFavorite(event, 'Катера')">Катера</p>
+                    <p class="openFavorite" onclick="openFavorite(event, 'Гидроциклы')">Гидроциклы</p>
+                    <p class="openFavorite" onclick="openFavorite(event, 'Лодки')">Лодки</p>
+                    <p class="openFavorite" onclick="openFavorite(event, 'Вездеходы')">Вездеходы</p>
+                    <p class="openFavorite" onclick="openFavorite(event, 'Снегоходы')">Снегоходы</p>
+                    <p class="openFavorite" onclick="openFavorite(event, 'Двигатели')">Двигатели</p>
+                    <p class="openFavorite" onclick="openFavorite(event, 'Запчасти')">Запчасти</p>
                 </div>
                 <div class="slider">
                     <div class="item">
@@ -465,7 +348,6 @@
                                         d="M30 0L29.0712 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30V0ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
                                         fill="white" />
                                 </svg>
-
                             </p>
                         </button>
                     </div>
@@ -590,5 +472,46 @@
         },
     });
 </script>
+<script>
+    function mostpopulare(evt, cityName) {
+        let i, tablinks;
+        tablinks = document.getElementsByClassName("mostpopulare");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script>
+    function openFavorite(evt, cityName) {
+        let i, tablinks;
+        tablinks = document.getElementsByClassName("openFavorite");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script>
+    function openCity(evt, cityName) {
+        let i, tablinks;
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        evt.currentTarget.className += " active";
+    }
+</script>
+<script>
+    function asd(evt, cityName) {
+      var i, tablinks;
+      tablinks = document.getElementsByClassName("asd");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementsByName('inp')[0].placeholder=`поиск ${cityName}`;
+      evt.currentTarget.className += " active";
+    }
+    </script>
 
 </html>
