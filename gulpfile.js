@@ -2,7 +2,7 @@
 const gulp = require('gulp')
 const autoprefixer = require('gulp-autoprefixer') // prefixex
 const cleanCSS = require('gulp-clean-css') // minify css
-const concat = require('gulp-concat') // unit files
+const concat = require('gulp-concat') // unit filegs
 const sass = require('gulp-sass')(require('sass')) // scss sass
 
 // sources

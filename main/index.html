@@ -89,11 +89,11 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="../publuc/слайдер баннер.jpg" alt="baner"></div>
-                    <div class="swiper-slide"><img src="https://picsum.photos/870/400" alt=""></div>
-                    <div class="swiper-slide"><img src="https://picsum.photos/870/400" alt=""></div>
-                    <div class="swiper-slide"><img src="https://picsum.photos/870/400" alt=""></div>
-                    <div class="swiper-slide"><img src="https://picsum.photos/870/400" alt=""></div>
-                    <div class="swiper-slide"><img src="https://picsum.photos/870/400" alt=""></div>
+                    <div class="swiper-slide"><img src="https://picsum.photos/870/300" alt=""></div>
+                    <div class="swiper-slide"><img src="https://picsum.photos/870/300" alt=""></div>
+                    <div class="swiper-slide"><img src="https://picsum.photos/870/300" alt=""></div>
+                    <div class="swiper-slide"><img src="https://picsum.photos/870/300" alt=""></div>
+                    <div class="swiper-slide"><img src="https://picsum.photos/870/300" alt=""></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -307,7 +307,7 @@
                 </div>
             </div>
             <center>
-                <button class="show_all">Показать еще</button>
+                <button class="show_all" href="./stings.html">Показать еще</button>
             </center>
             <div class="ads">
                 <img src="../publuc/left.png" alt="">
@@ -440,78 +440,7 @@
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
-<script>
-    var swiper = new Swiper(".mySwipers", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-</script>
-<script>
-    function mostpopulare(evt, cityName) {
-        let i, tablinks;
-        tablinks = document.getElementsByClassName("mostpopulare");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        evt.currentTarget.className += " active";
-    }
-</script>
-<script>
-    function openFavorite(evt, cityName) {
-        let i, tablinks;
-        tablinks = document.getElementsByClassName("openFavorite");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        evt.currentTarget.className += " active";
-    }
-</script>
-<script>
-    function openCity(evt, cityName) {
-        let i, tablinks;
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        evt.currentTarget.className += " active";
-    }
-</script>
-<script>
-    function asd(evt, cityName) {
-      var i, tablinks;
-      tablinks = document.getElementsByClassName("asd");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementsByName('inp')[0].placeholder=`поиск ${cityName}`;
-      evt.currentTarget.className += " active";
-    }
-    </script>
+<script src="../main js/main.js"></script>
+<script src="../main js/openall.js"></script>
 
 </html>
