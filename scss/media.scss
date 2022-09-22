@@ -1,0 +1,59 @@
+@media only screen and (max-width: 768px) {
+    .mobil_v {
+        display: block;
+    }
+
+    .pc {
+        display: none !important;
+    }
+
+    header div {
+        justify-content: space-between;
+    }
+
+    main {
+        .top {
+            flex-direction: column;
+            gap: 40px
+        }
+
+        .inp {
+            background-color: #F0F0F4;
+            padding: 15px 10px;
+        }
+    }
+
+    .tabs {
+        overflow-x: scroll;
+    }
+
+    .tabs::-webkit-scrollbar {
+        opacity: 1;
+    }
+
+    .tabs .active::before {
+        top: 27pxa;
+    }
+
+    .ads {
+        p {
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center !important;
+            margin: 0px 0px !important;
+        }
+        button{
+            width: 141px !important;
+            margin-right: 0 !important;
+            font-size: 14px;
+            padding: 0px 0px !important;
+        }
+        div {
+            flex-direction: column !important;
+        }
+    }
+    footer .top{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
